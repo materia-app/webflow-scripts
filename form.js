@@ -282,7 +282,7 @@ $(function() {
       $('.cont-1 .checkbox-2:checked').each( function() {
           text1 += $(this).val() + ";\n";
       });
-      $('#area1').val( text1 );
+      $('#Profession').val( text1 );
   }
   
   $('.cont-1 .checkbox-2').change(function () {
@@ -294,7 +294,7 @@ $(function() {
       $('.cont-2 .checkbox-2:checked').each( function() {
           text2 += $(this).val() + ";\n";
       });
-      $('#area2').val( text2 );
+      $('#Major-Area').val( text2 );
   }
   
   $('.cont-2 .checkbox-2').change(function () {
@@ -306,7 +306,7 @@ $(function() {
       $('.cont-3 .checkbox-2:checked').each( function() {
           text3 += $(this).val() + ";\n";
       });
-      $('#area3').val( text3 );
+      $('#Minor-Area').val( text3 );
   }
   
   $('.cont-3 .checkbox-2').change(function () {
@@ -318,7 +318,7 @@ $(function() {
       $('.cont-4 .checkbox-2:checked').each( function() {
           text4 += $(this).val() + ";\n";
       });
-      $('#area4').val( text4 );
+      $('#Major-Tag').val( text4 );
   }
   
   $('.cont-4 .checkbox-2').change(function () {
@@ -330,7 +330,7 @@ $(function() {
       $('.cont-5 .checkbox-2:checked').each( function() {
           text5 += $(this).val() + ";\n";
       });
-      $('#area5').val( text5 );
+      $('#Minor-tag').val( text5 );
   }
   
   $('.cont-5 .checkbox-2').change(function () {
@@ -342,7 +342,7 @@ $(function() {
       $('.cont-6 .checkbox-2:checked').each( function() {
           text6 += $(this).val() + ";\n";
       });
-      $('#area6').val( text6 );
+      $('#Gender').val( text6 );
   }
   
   $('.cont-6 .checkbox-2').change(function () {
@@ -354,7 +354,7 @@ $(function() {
       $('.cont-7 .checkbox-2:checked').each( function() {
           text7 += $(this).val() + ";\n";
       });
-      $('#area7').val( text7 );
+      $('#Other-identities').val( text7 );
   }
   
   $('.cont-7 .checkbox-2').change(function () {
@@ -366,7 +366,7 @@ $(function() {
       $('.cont-8 .checkbox-2:checked').each( function() {
           text8 += $(this).val() + ";\n";
       });
-      $('#area8').val( text8 );
+      $('#events').val( text8 );
   }
   
   $('.cont-8 .checkbox-2').change(function () {
@@ -378,7 +378,7 @@ $(function() {
       $('.cont-9 .checkbox-2:checked').each( function() {
           text9 += $(this).val() + ";\n";
       });
-      $('#area9').val( text9 );
+      $('#preferred-identity').val( text9 );
   }
   
   $('.cont-9 .checkbox-2').change(function () {
