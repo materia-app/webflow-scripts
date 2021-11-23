@@ -274,7 +274,52 @@ $(function() {
       }, 200 );
     });
   })
+
+  $(function() {
   
+    $('.cont-9').mixItUp();
+  
+    var inputText9;
+    var $matching = $();
+  
+    // Delay function
+    var delay = (function(){
+      var timer = 0;
+      return function(callback, ms){
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+      };
+    })();
+  
+    $("#inputSearch9").keyup(function(){
+      // Delay function invoked to make sure user stopped typing
+      delay(function(){
+        inputText9 = $("#inputSearch9").val().toLowerCase();
+        
+        // Check to see if input field is empty
+        if ((inputText9.length) > 0) {            
+          $( '.mix').each(function() {
+            $this = $("this");
+            
+             // add item to be filtered out if input text matches items inside the title   
+             if($(this).children('.filter-category').text().toLowerCase().match(inputText9)) {
+              $matching = $matching.add(this);
+            }
+            else {
+              // removes any previously matched item
+              $matching = $matching.not(this);
+            }
+          });
+          $('.cont-9').mixItUp('filter', $matching);
+        }
+  
+        else {
+          // resets the filter to show all item if input is empty
+          $('.cont-9').mixItUp('filter', 'all');
+        }
+      }, 200 );
+    });
+  })
   
   // Checkboxes Fields
   function updateTextArea1() {
